@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Sprites/Man.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/Sprite-0001.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/player.gd" type="Script" id=3]
+
+[node name="player" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Man" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+offset = Vector2( 9.265, 1.386 )
+
+[node name="Light2D" type="Light2D" parent="."]
+position = Vector2( 0.0943451, -0.277702 )
+texture = ExtResource( 2 )
+offset = Vector2( 101.966, -1.08454 )
+shadow_enabled = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
